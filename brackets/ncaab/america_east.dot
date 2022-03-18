@@ -1,0 +1,34 @@
+digraph {
+graph [rankdir=LR];"t1" [label="1 Vermont"];
+"t2" [label="1 Vermont"];
+"t3" [label="1 Vermont"];
+"t4" [label="1 Vermont"];
+"t5" [label="8 N.J.I.T."];
+"t4" -> "t3";
+"t5" -> "t3";
+"t6" [label="4 Hartford"];
+"t7" [label="4 Hartford"];
+"t8" [label="5 Albany"];
+"t7" -> "t6";
+"t8" -> "t6";
+"t3" -> "t2";
+"t6" -> "t2";
+"t9" [label="2 UMBC"];
+"t10" [label="2 UMBC"];
+"t11" [label="2 UMBC"];
+"t12" [label="7 UMass Lowell"];
+"t11" -> "t10";
+"t12" -> "t10";
+"t13" [label="3 New Hampshire"];
+"t14" [label="3 New Hampshire"];
+"t15" [label="6 Binghamton"];
+"t14" -> "t13";
+"t15" -> "t13";
+"t10" -> "t9";
+"t13" -> "t9";
+"t2" -> "t1";
+"t9" -> "t1";
+score [label="score: 11"];
+seed [label="seed score: 11"];
+max [label="avg score: 12"];
+}

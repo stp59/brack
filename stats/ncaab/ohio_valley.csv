@@ -1,0 +1,11 @@
+rounds,4,,,,,,,
+reseeds,,,,,,,,
+name,seed,ppg,oppg,advances,elo,wins,losses,pct
+Murray State,1,79.3,62.3,4,1712.28,29,2,93.55
+Belmont,2,78.5,68.2,2,1606.45,25,7,78.13
+Morehead State,3,70,63.5,3,1510.46,23,10,69.7
+Southeast Missouri State,4,75.6,77.3,2,1292.22,14,18,43.75
+Tennessee State,5,71.3,70.2,1,1254.65,14,18,43.75
+Austin Peay,6,64.7,69.1,0,1260.03,12,17,41.38
+Tennessee Tech,7,72.8,73.7,1,1244.4,11,21,34.38
+SIU-Edwardsville,8,67.5,69.9,0,1176.54,11,21,34.38

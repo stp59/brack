@@ -1,0 +1,15 @@
+rounds,4,,,,,,,
+reseeds,,,,,,,,
+name,seed,ppg,oppg,advances,elo,wins,losses,pct
+Liberty,1,73.4,63.5,2,1489.12,22,11,66.67
+Jacksonville State,2,73.9,66.8,2,1492.86,21,10,67.74
+Jacksonville,3,67.1,59.3,3,1459.15,21,9,70
+Bellarmine,4,70.1,67.2,4,1487.3,19,13,59.38
+Florida Gulf Coast,5,77.4,73.2,1,1439.09,21,11,65.63
+Central Arkansas,6,73.2,81.1,1,1252.39,11,20,35.48
+Kennesaw State,7,74.8,71.2,1,1255.19,13,18,41.94
+Lipscomb,8,74,76.8,1,1294.73,14,19,42.42
+North Florida,9,68.5,71.2,0,1316.87,11,20,35.48
+Eastern Kentucky,10,79.3,75.1,0,1254.26,13,18,41.94
+Stetson,11,69.7,71.5,0,1203.46,11,19,36.67
+North Alabama,12,69.4,68.5,0,1126.64,9,21,30

@@ -1,0 +1,15 @@
+open Types
+
+(* Team with the higher number of [advances] wins. Used to build/encode
+   the "real" bracket. *)
+let sim_actual t1 t2 =
+  Int.compare t1.advances t2.advances
+
+(* Basic simulation; higher seed advances. *)
+let sim_seed t1 t2 =
+  Int.compare t2.seed t1.seed
+
+let sim_ppg t1 t2 =
+  let t1_score = (t1.ppg +. t2.oppg) /. 2. in
+  let t2_score = (t2.ppg +. t1.oppg) /. 2. in
+  Float.compare t1_score t2_score

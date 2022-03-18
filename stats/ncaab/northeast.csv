@@ -1,0 +1,12 @@
+rounds,4,,,,,,,
+reseeds,,,,,,,,
+name,seed,ppg,oppg,advances,elo,wins,losses,pct
+Bryant,1,77.9,72.7,4,1560.8,21,9,70
+Wagner,2,74.4,64.7,3,1489.84,21,5,80.77
+Long Island,3,74.8,73.5,2,1402.44,16,14,53.33
+Mount St. Mary's,4,66.1,65.3,2,1310.28,14,16,46.67
+St. Francis (NY),5,67.2,70.5,1,1216.42,10,20,33.33
+Sacred Heart,6,72.7,75.1,1,1195.92,10,20,33.33
+St. Francis (PA),7,68.6,73.5,1,1151.22,9,21,30
+Fairleigh Dickinson,8,67.2,79.2,0,1116.97,4,22,15.38
+Central Connecticut State,9,61.8,72.1,1,1142.2,8,24,25

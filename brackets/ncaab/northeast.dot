@@ -1,0 +1,38 @@
+digraph {
+graph [rankdir=LR];"t1" [label="1 Bryant"];
+"t2" [label="1 Bryant"];
+"t3" [label="1 Bryant"];
+"t4" [label="1 Bryant"];
+"t5" [label="9 Central Connecticut State"];
+"t6" [label="8 Fairleigh Dickinson"];
+"t7" [label="9 Central Connecticut State"];
+"t6" -> "t5";
+"t7" -> "t5";
+"t4" -> "t3";
+"t5" -> "t3";
+"t8" [label="4 Mount St. Mary's"];
+"t9" [label="4 Mount St. Mary's"];
+"t10" [label="5 St. Francis (NY)"];
+"t9" -> "t8";
+"t10" -> "t8";
+"t3" -> "t2";
+"t8" -> "t2";
+"t11" [label="2 Wagner"];
+"t12" [label="2 Wagner"];
+"t13" [label="2 Wagner"];
+"t14" [label="7 St. Francis (PA)"];
+"t13" -> "t12";
+"t14" -> "t12";
+"t15" [label="3 Long Island"];
+"t16" [label="3 Long Island"];
+"t17" [label="6 Sacred Heart"];
+"t16" -> "t15";
+"t17" -> "t15";
+"t12" -> "t11";
+"t15" -> "t11";
+"t2" -> "t1";
+"t11" -> "t1";
+score [label="score: 25"];
+seed [label="seed score: 24"];
+max [label="avg score: 25"];
+}
