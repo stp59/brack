@@ -1,0 +1,7 @@
+rounds,2,,,,,,,
+reseeds,,,,,,,,
+name,seed,ppg,oppg,advances,elo,wins,losses,pct
+Princeton,1,80.6,69.4,1,1578.84,23,5,82.14
+Yale,2,72.8,69.3,2,1579.03,18,11,62.07
+Pennsylvania,3,72.4,75.8,0,1420.35,12,16,42.86
+Cornell,4,79.4,74.6,0,1380.44,15,11,57.69

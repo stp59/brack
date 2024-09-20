@@ -1,0 +1,56 @@
+open Types
+(* open Core *)
+
+(* alias "number of rounds" *)
+let rec depth (b : bracket) : int =
+  match b with
+  | Team _ -> 0
+  | Game (_, b1, b2) -> max (depth b1) (depth b2) |> (+) 1
+
+let rec num_teams_at_depth (b : bracket) (d : int) : int =
+  if d <= 0 then
+    match b with
+    | Team _ -> 0
+    | _ -> 1
+  else
+    match b with
+    | Team _ -> 0
+    | Game (_, b1, b2) ->
+       (num_teams_at_depth b1 (d-1)) +
+         (num_teams_at_depth b2 (d-1))
+
+let rec teams_at_depth (b : bracket) (d : int) : team list =
+  if d <= 0 then
+    match b with
+    | Team _ -> []
+    | Game (None, _, _) -> []
+    | Game (Some t, _, _) -> [t]
+  else
+    match b with
+    | Team _ -> []
+    | Game (_, b1, b2) ->
+       List.rev_append
+         (teams_at_depth b1 (d-1))
+         (teams_at_depth b2 (d-1))
+
+let value_at_depth (d : int) : int = Core.Int.pow 2 (d-1)
+
+let avg_score (b : bracket) : float =
+  let open Core in
+  let d = depth b in
+  Float.of_int (2 * (d-1))
+
+let score_round (expected : team list) (actual : team list) (v : int) : int =
+  let open Core.List in
+  map expected ~f:(fun e -> if exists actual ~f:((=) e) then 1 else 0)
+  |> fold ~init:0 ~f:(+)
+  |> ( * ) (Core.Int.pow 2 v)
+
+let score_bracket (b : bracket) (actual : bracket) : int =
+  let open Core in
+  let d = depth b in
+  let expected_teams = List.init d ~f:(fun i -> teams_at_depth b i) in
+  let actual_teams = List.init d ~f:(fun i -> teams_at_depth actual i) in
+  List.zip_exn expected_teams actual_teams
+  |> List.mapi ~f:(fun i (e,a) -> score_round e a (d-i-1))
+  |> List.fold ~init:0 ~f:(+)

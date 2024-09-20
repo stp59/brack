@@ -1,0 +1,11 @@
+rounds,3,,,,,,,
+reseeds,,,,,,,,
+name,seed,ppg,oppg,advances,elo,wins,losses,pct
+Norfolk State,1,75.3,64,3,1500.54,23,6,79.31
+Howard,2,76.4,69.6,0,1285.14,16,13,55.17
+North Carolina Central,3,72.9,68.4,1,1261.51,16,15,51.61
+Morgan State,4,75.7,72.2,1,1286.49,13,14,48.15
+South Carolina State,5,71.7,72.3,0,1215.87,15,16,48.39
+Maryland-Eastern Shore,6,67.2,66.3,0,1190.98,11,15,42.31
+Coppin State,7,66.9,74.8,2,1224.65,9,22,29.03
+Delaware State,8,62.8,73.5,0,939.71,2,26,7.14

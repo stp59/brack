@@ -1,0 +1,18 @@
+digraph {
+graph [rankdir=LR];"t1" [label="1 Princeton"];
+"t2" [label="1 Princeton"];
+"t3" [label="1 Princeton"];
+"t4" [label="4 Cornell"];
+"t3" -> "t2";
+"t4" -> "t2";
+"t5" [label="2 Yale"];
+"t6" [label="2 Yale"];
+"t7" [label="3 Pennsylvania"];
+"t6" -> "t5";
+"t7" -> "t5";
+"t2" -> "t1";
+"t5" -> "t1";
+score [label="score: 2"];
+seed [label="seed score: 2"];
+max [label="avg score: 4"];
+}

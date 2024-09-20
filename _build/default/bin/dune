@@ -1,0 +1,3 @@
+(executable
+ (name main)
+ (libraries tournament core core_unix.command_unix csv))
